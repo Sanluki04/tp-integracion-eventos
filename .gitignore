@@ -1,0 +1,7 @@
+node_modules/
+logs/
+metrics.json
+processed-events.json
+.env
+.DS_Store
+*.log

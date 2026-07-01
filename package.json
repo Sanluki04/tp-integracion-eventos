@@ -1,0 +1,29 @@
+{
+  "name": "tp-integracion-eventos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "api": "node api-service/index.js",
+    "api:dev": "nodemon api-service/index.js",
+    "worker:assign": "node workers/assignment-worker.js",
+    "worker:assign:dev": "nodemon workers/assignment-worker.js",
+    "worker:audit": "node workers/audit-worker.js",
+    "worker:audit:dev": "nodemon workers/audit-worker.js",
+    "rabbitmq:up": "docker-compose up -d",
+    "rabbitmq:down": "docker-compose down",
+    "rabbitmq:logs": "docker-compose logs -f",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "TP Comunicación por eventos con broker - RabbitMQ",
+  "dependencies": {
+    "amqplib": "^2.0.1",
+    "express": "^5.2.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
