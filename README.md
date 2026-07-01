@@ -32,17 +32,19 @@ Sistema de mesa de ayuda orientado a eventos utilizando **RabbitMQ** como broker
 
 tp-integracion-eventos/
 ├── api-service/
-│ └── index.js # Servidor HTTP (POST /tickets)
+│   └── index.js
 ├── workers/
-│ ├── assignment-worker.js # Asigna responsables
-│ └── audit-worker.js # Guarda auditoría
+│   ├── assignment-worker.js
+│   └── audit-worker.js
 ├── logs/
-│ └── audit.log # Auditoría de eventos
-├── connection.js # Conexión a RabbitMQ
-├── docker-compose.yml # Configuración de RabbitMQ
+│   └── audit.log
+├── connection.js
+├── docker-compose.yml
 ├── package.json
-├── metrics.json # Contador de tickets por día
-├── processed-events.json # Idempotencia
+├── package-lock.json
+├── .gitignore
+├── metrics.json
+├── processed-events.json
 └── README.md
 
 ---
